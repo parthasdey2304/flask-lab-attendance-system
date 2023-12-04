@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 p-4 md:p-0 h-screen bg-blue-400">
+    <div id="container" class="w-full h-screen flex justify-center items-center">
+        <div id="box" class="bg-white/50 w-[450px] md:h-[840px] rounded-xl p-6 md:p-10 flex-col space-y-5">
+            <h1 class="text-4xl text-white font-serif text-center py-8 uppercase">Attendance System</h1>
+            
+            <form action="{{ url_for('submit') }}" method="post" class="flex-col space-y-5">
+                <input type="text" placeholder="Name" class="w-full h-14 rounded-xl px-2 py-1 text-xl font-serif uppercase" id="name" name="name" required>
+
+                <input type="number" placeholder="Student ID (Last 4 digits)" class="w-full h-14 rounded-xl px-2 py-1 text-xl font-serif uppercase" id="student_id" name="student_id" required>
+
+                <select class="w-full h-14 rounded-xl px-2 py-1 text-xl font-serif" id="department" name="department" required>
+                    <option value="null">Department</option>
+                    <option value="bba">BBA</option>
+                    <option value="bca">BCA</option>
+                    <option value="btech">BTECH</option>
+                    <option value="mtech">MTECH</option>
+                    <option value="mca">MCA</option>
+                    <option value="bsc">BSC</option>
+                    <option value="bcom">BCOM</option>
+                </select>
+
+                <input type="text" placeholder="Section" class="w-full h-14 rounded-xl px-2 py-1 text-xl font-serif uppercase" id="section" name="section" required>
+
+                <input type="number" placeholder="Computer ID (Last 4 digits)" class="w-full h-14 rounded-xl px-2 py-1 text-xl font-serif uppercase" id="computer_id" name="computer_id" required>
+
+                <input type="date" class="w-full h-14 rounded-xl px-2 py-1 text-xl font-serif" id="date" name="date" required>
+
+                <input type="time" class="w-full h-14 rounded-xl px-2 py-1 text-xl font-serif" id="time" name="time" required>
+
+                <div class="w-full flex justify-center">
+                    <button type="submit" class="w-full bg-blue-600 px-10 py-4 rounded-2xl text-2xl text-white font-serif">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
