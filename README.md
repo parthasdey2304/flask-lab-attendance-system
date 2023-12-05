@@ -36,7 +36,13 @@ pip install sqlite3
 
 + Clone the repo :
 ``` sh
-git clone https://github.com/parthasdey2304/flask-attendence-system.git
+git clone https://github.com/parthasdey2304/flask-lab-attendance-system.git
+```
+
+# Usage
++ Open the repository : 
+``` sh
+cd flask-lab-attendance-system
 ```
 
 + Run the ``main.py`` file :
@@ -44,3 +50,14 @@ git clone https://github.com/parthasdey2304/flask-attendence-system.git
 python main.py
 ```
 
+# Contributing
+We welcome contributions from the community! We welcome your contributions to improve the project. If you'd like to contribute to Flask-Lab-Attendance-System, please read the following guidelines on how to contribute:
++ Fork the repository and create a new branch for your changes.
++ Make your changes to the code.
++ Test your changes thoroughly.
++ Commit your changes with a clear and descriptive message.
++ Push your changes to your fork.
++ Create a pull request and wait for me to verify and then merge it to the main branch.
+
+# THANK YOU COMMUNITY!!!!
+ 
