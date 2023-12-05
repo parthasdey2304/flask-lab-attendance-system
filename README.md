@@ -50,6 +50,13 @@ cd flask-lab-attendance-system
 python main.py
 ```
 
+# Upcoming Features : 
+1. Online database functionality.( addition of SuperBase for backend)
+2. Exporting attendance data as a .csv file.
+3. Streamlining the database setup process using MongoDB.
+4. Integration of pywhatkit and telebot to get the attendance data in PDF format.
+5. Usage of RFID system with Raspberry Pi Zero to prevent chances of proxy.
+
 # Contributing
 We welcome contributions from the community! We welcome your contributions to improve the project. If you'd like to contribute to Flask-Lab-Attendance-System, please read the following guidelines on how to contribute:
 + Fork the repository and create a new branch for your changes.
